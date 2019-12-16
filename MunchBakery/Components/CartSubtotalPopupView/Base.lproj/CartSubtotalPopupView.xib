@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartSubtotalPopupView" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="6JF-lg-nCa"/>
+                <outlet property="numberOfItemsLabel" destination="fVl-vc-n83" id="rlI-S2-5z0"/>
+                <outlet property="priceLabel" destination="q0a-Wo-66E" id="0Oj-ZD-LbG"/>
+                <outlet property="proceedToCheckoutButtonOutlet" destination="ZNH-Ln-ERW" id="yeF-YK-Ep4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sbJ-VL-qLs">
+                    <rect key="frame" x="86.5" y="69" width="241" height="26"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Subtotal (6 items):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVl-vc-n83">
+                            <rect key="frame" x="0.0" y="0.0" width="173" height="26"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="63 SAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0a-Wo-66E">
+                            <rect key="frame" x="178" y="0.0" width="63" height="26"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="19"/>
+                            <color key="textColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNH-Ln-ERW">
+                    <rect key="frame" x="41.5" y="115" width="331" height="36"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Tkg-Ui-gXA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
+                    <state key="normal" title="Proceed to checkout"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZNH-Ln-ERW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6DM-Dg-CrN"/>
+                <constraint firstItem="ZNH-Ln-ERW" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="6lZ-Dm-fC4"/>
+                <constraint firstItem="ZNH-Ln-ERW" firstAttribute="top" secondItem="sbJ-VL-qLs" secondAttribute="bottom" constant="20" id="7ik-Ep-uf9"/>
+                <constraint firstItem="sbJ-VL-qLs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="E06-MV-h0f"/>
+                <constraint firstItem="sbJ-VL-qLs" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="FdZ-Zf-JGl"/>
+                <constraint firstItem="sbJ-VL-qLs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="ZGQ-Ez-lrJ"/>
+                <constraint firstItem="sbJ-VL-qLs" firstAttribute="width" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.85" id="u4s-kY-a6u"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="141" y="170"/>
+        </view>
+    </objects>
+</document>

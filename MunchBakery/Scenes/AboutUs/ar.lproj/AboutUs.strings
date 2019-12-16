@@ -1,0 +1,18 @@
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "1a9-6n-PGD"; */
+"1a9-6n-PGD.title" = "Item";
+
+/* Class = "UILabel"; text = "$username"; ObjectID = "6He-Sn-guY"; */
+"6He-Sn-guY.text" = "$username";
+
+/* Class = "UILabel"; text = "#phone number"; ObjectID = "Gaq-7w-Rg1"; */
+"Gaq-7w-Rg1.text" = "#phone number";
+
+/* Class = "UIButton"; normalTitle = "Edit Profile"; ObjectID = "HTY-eV-rUd"; */
+"HTY-eV-rUd.normalTitle" = "Edit Profile";
+
+/* Class = "UIButton"; normalTitle = "Change to Arabic"; ObjectID = "VGn-LU-vzC"; */
+"VGn-LU-vzC.normalTitle" = "Change to Arabic";
+
+/* Class = "UILabel"; text = "Welcome back"; ObjectID = "c1B-dZ-huC"; */
+"c1B-dZ-huC.text" = "Welcome back";

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PricePickerView" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLbl" destination="EnM-KL-vV0" id="buI-Yd-aRP"/>
+                <outlet property="containerView" destination="FdQ-67-rx4" id="tK7-DP-mzB"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="q7U-Vu-tnI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdQ-67-rx4">
+                    <rect key="frame" x="87" y="384" width="240" height="128"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwM-bC-Qty">
+                            <rect key="frame" x="5" y="46.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qwM-bC-Qty" secondAttribute="height" multiplier="1:1" id="BcR-TB-uHB"/>
+                                <constraint firstAttribute="width" constant="35" id="Dym-ae-VZf"/>
+                            </constraints>
+                            <state key="normal" image="addBtn"/>
+                            <connections>
+                                <action selector="onIncrease:" destination="-1" eventType="touchUpInside" id="lQh-1g-MWb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-aw-tKe">
+                            <rect key="frame" x="200" y="46.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="6o0-a2-Tr7"/>
+                                <constraint firstAttribute="width" secondItem="u6w-aw-tKe" secondAttribute="height" multiplier="1:1" id="R0R-mA-7b0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                            <state key="normal" image="delete_cross"/>
+                            <connections>
+                                <action selector="onDecrease:" destination="-1" eventType="touchUpInside" id="fxW-94-SN9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnM-KL-vV0">
+                            <rect key="frame" x="48" y="51" width="144" height="26"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="qwM-bC-Qty" firstAttribute="centerY" secondItem="FdQ-67-rx4" secondAttribute="centerY" id="HnT-nc-36f"/>
+                        <constraint firstItem="u6w-aw-tKe" firstAttribute="centerY" secondItem="FdQ-67-rx4" secondAttribute="centerY" id="IJZ-Dv-dVf"/>
+                        <constraint firstItem="qwM-bC-Qty" firstAttribute="leading" secondItem="FdQ-67-rx4" secondAttribute="leading" constant="5" id="QRM-Q0-kLF"/>
+                        <constraint firstAttribute="trailing" secondItem="u6w-aw-tKe" secondAttribute="trailing" constant="5" id="ej5-e7-u4R"/>
+                        <constraint firstItem="EnM-KL-vV0" firstAttribute="leading" secondItem="qwM-bC-Qty" secondAttribute="trailing" constant="8" symbolic="YES" id="mSt-jE-hSf"/>
+                        <constraint firstItem="EnM-KL-vV0" firstAttribute="centerY" secondItem="FdQ-67-rx4" secondAttribute="centerY" id="sJY-7A-TKj"/>
+                        <constraint firstItem="u6w-aw-tKe" firstAttribute="leading" secondItem="EnM-KL-vV0" secondAttribute="trailing" constant="8" symbolic="YES" id="sfJ-g4-xbp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FdQ-67-rx4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="426-qZ-lSc"/>
+                <constraint firstItem="FdQ-67-rx4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Cb1-Nb-6UR"/>
+                <constraint firstItem="FdQ-67-rx4" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.142857" id="Pzw-R4-q9d"/>
+                <constraint firstItem="FdQ-67-rx4" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.57971" id="Rm2-s6-Iq0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="43" y="133"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addBtn" width="15" height="15"/>
+        <image name="delete_cross" width="15" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartViewController" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="cartSubtotalPoupView" destination="UmY-Ac-K5q" id="Bdh-M1-i9F"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEf-wB-5Bh" customClass="CartTableView" customModule="MunchBakery" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="152" width="414" height="644"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Cart" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLl-0C-E8p">
+                    <rect key="frame" x="20" y="124" width="94" height="28"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
+                    <color key="textColor" red="0.2627450980392157" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEZ-at-CHX">
+                    <rect key="frame" x="195.5" y="131" width="23.5" height="14"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItY-xX-QEN">
+                    <rect key="frame" x="353" y="131" width="41" height="14"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmY-Ac-K5q" customClass="CartSubtotalPopupView" customModule="MunchBakery" customModuleProvider="target">
+                    <rect key="frame" x="31" y="652" width="352" height="130"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="u9H-M1-7ok"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UmY-Ac-K5q" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.85" id="486-vf-yPG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oEf-wB-5Bh" secondAttribute="bottom" constant="66" id="8Si-fh-vcQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ItY-xX-QEN" secondAttribute="trailing" constant="20" id="EzP-XL-YLi"/>
+                <constraint firstItem="oEf-wB-5Bh" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="RG3-xR-943"/>
+                <constraint firstItem="pLl-0C-E8p" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="TpL-dq-ctv"/>
+                <constraint firstItem="pLl-0C-E8p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UIg-lq-jmm"/>
+                <constraint firstItem="ZEZ-at-CHX" firstAttribute="centerY" secondItem="pLl-0C-E8p" secondAttribute="centerY" id="YGf-XS-Xeg"/>
+                <constraint firstItem="ItY-xX-QEN" firstAttribute="centerY" secondItem="pLl-0C-E8p" secondAttribute="centerY" id="cFn-rh-ovO"/>
+                <constraint firstItem="oEf-wB-5Bh" firstAttribute="top" secondItem="pLl-0C-E8p" secondAttribute="bottom" id="m49-Wh-G1j"/>
+                <constraint firstItem="ZEZ-at-CHX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nwZ-0I-aXw"/>
+                <constraint firstItem="UmY-Ac-K5q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="peY-0s-jbO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UmY-Ac-K5q" secondAttribute="bottom" constant="80" id="udY-c9-7BX"/>
+                <constraint firstItem="oEf-wB-5Bh" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zyx-QC-5Zz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="140.57971014492756" y="116.51785714285714"/>
+        </view>
+    </objects>
+</document>

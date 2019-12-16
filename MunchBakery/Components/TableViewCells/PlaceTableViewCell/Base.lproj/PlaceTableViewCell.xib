@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuseoSansDisplay-Black.ttf">
+            <string>MuseoSansDisplay-Black</string>
+        </array>
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="36" id="KGk-i7-Jjw" customClass="PlaceTableViewCell" customModule="MunchBakery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="QwU-uV-Dtw">
+                        <rect key="frame" x="11" y="6" width="188" height="52.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al Hijran" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-Gn-pre">
+                                <rect key="frame" x="0.0" y="0.0" width="68" height="19.5"/>
+                                <fontDescription key="fontDescription" name="MuseoSansDisplay-Black" family="Museo Sans Display" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:30 PM - 11:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADH-81-aXl">
+                                <rect key="frame" x="0.0" y="19.5" width="116" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: 920015010" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4U-8I-U0v">
+                                <rect key="frame" x="0.0" y="36" width="106.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300m" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-m0-2Vw">
+                        <rect key="frame" x="276.5" y="6" width="32.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closest Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr6-7a-Bb0">
+                        <rect key="frame" x="211" y="22.5" width="98" height="16.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HRa-m0-2Vw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="8f0-FF-Szm"/>
+                    <constraint firstItem="QwU-uV-Dtw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ah7-2t-thh"/>
+                    <constraint firstItem="yr6-7a-Bb0" firstAttribute="leading" secondItem="QwU-uV-Dtw" secondAttribute="trailing" constant="12" id="Q1H-DD-NGr"/>
+                    <constraint firstItem="QwU-uV-Dtw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="bWr-4q-Eg6"/>
+                    <constraint firstAttribute="trailing" secondItem="HRa-m0-2Vw" secondAttribute="trailing" constant="11" id="lAl-w3-CYl"/>
+                    <constraint firstItem="HRa-m0-2Vw" firstAttribute="trailing" secondItem="yr6-7a-Bb0" secondAttribute="trailing" id="q5H-hR-Hm1"/>
+                    <constraint firstItem="yr6-7a-Bb0" firstAttribute="top" secondItem="HRa-m0-2Vw" secondAttribute="bottom" id="zZu-P3-yBx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.95012098550796509" green="0.40958473086357117" blue="0.50823760032653809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="closestLocationLbl" destination="yr6-7a-Bb0" id="XQB-8e-XWa"/>
+                <outlet property="distanceLbl" destination="HRa-m0-2Vw" id="85a-3N-qak"/>
+                <outlet property="phoneNumberLbl" destination="u4U-8I-U0v" id="tAh-HG-tt5"/>
+                <outlet property="placeNameLbl" destination="YAB-Gn-pre" id="Hny-xa-eyv"/>
+                <outlet property="workingHoursLbl" destination="ADH-81-aXl" id="d16-6i-aBl"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="163.26836581709148"/>
+        </tableViewCell>
+    </objects>
+</document>

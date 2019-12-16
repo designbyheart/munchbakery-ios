@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="OrderTableViewCell" customModule="MunchBakery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake" translatesAutoresizingMaskIntoConstraints="NO" id="b4s-lv-LeY">
+                        <rect key="frame" x="15" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ulf-c0-H4f"/>
+                            <constraint firstAttribute="width" constant="40" id="v5s-wW-D3H"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgF-Zd-QHU" customClass="BorderButton" customModule="MunchBakery" customModuleProvider="target">
+                        <rect key="frame" x="275" y="13" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3K1-ua-qLn"/>
+                            <constraint firstAttribute="width" constant="30" id="WtO-en-j6z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                        <state key="normal" title="1">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="imageDirection">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cookie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73E-B4-mpg">
+                        <rect key="frame" x="63" y="13" width="134" height="20"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.50 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gjZ-nA-c35">
+                        <rect key="frame" x="201" y="21" width="54" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="Qxo-X6-2th"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="10"/>
+                        <color key="textColor" red="0.96078431369999995" green="0.21176470589999999" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rG4-WG-Uoa">
+                        <rect key="frame" x="63" y="35" width="40" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="UtS-79-b7F"/>
+                            <constraint firstAttribute="width" constant="40" id="VCv-83-Ef8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
+                        <state key="normal" title="Delete">
+                            <color key="titleColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="b9w-CQ-OUU"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="cgF-Zd-QHU" secondAttribute="trailing" id="8Nv-9I-0tf"/>
+                    <constraint firstItem="cgF-Zd-QHU" firstAttribute="leading" secondItem="gjZ-nA-c35" secondAttribute="trailing" constant="20" id="8Zv-Zb-OQT"/>
+                    <constraint firstItem="gjZ-nA-c35" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dzm-E8-fqC"/>
+                    <constraint firstItem="b4s-lv-LeY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="HQl-li-Ift"/>
+                    <constraint firstItem="b4s-lv-LeY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QaM-2k-R1o"/>
+                    <constraint firstItem="rG4-WG-Uoa" firstAttribute="top" secondItem="73E-B4-mpg" secondAttribute="bottom" constant="2" id="deV-Ml-n0b"/>
+                    <constraint firstItem="cgF-Zd-QHU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jqH-wN-fJZ"/>
+                    <constraint firstItem="73E-B4-mpg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="lA2-La-qGB"/>
+                    <constraint firstItem="gjZ-nA-c35" firstAttribute="leading" secondItem="73E-B4-mpg" secondAttribute="trailing" constant="4" id="oo7-Fd-0fH"/>
+                    <constraint firstItem="rG4-WG-Uoa" firstAttribute="leading" secondItem="73E-B4-mpg" secondAttribute="leading" id="tcy-ww-YG5"/>
+                    <constraint firstItem="73E-B4-mpg" firstAttribute="leading" secondItem="b4s-lv-LeY" secondAttribute="trailing" constant="8" id="zn2-Gm-fCd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountButtonOutlet" destination="cgF-Zd-QHU" id="kXT-fq-pjy"/>
+                <outlet property="cakeImage" destination="b4s-lv-LeY" id="iWN-3R-J71"/>
+                <outlet property="cakeNameLbl" destination="73E-B4-mpg" id="wLI-4R-xCs"/>
+                <outlet property="cakePriceLbl" destination="gjZ-nA-c35" id="3R7-Xj-cVf"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="149.32533733133434"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cake" width="190" height="190"/>
+    </resources>
+</document>

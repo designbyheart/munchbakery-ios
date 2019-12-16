@@ -1,0 +1,11 @@
+//
+//  OrderProductsRequest.swift
+//  MunchBakery
+//
+//  Created by Predrag Jevtic on 12/1/19.
+//  Copyright © 2019 Predrag Jevtic. All rights reserved.
+//
+
+import Foundation
+
+//https://api.munchbakery.com/MunchBakeryAPIService.svc/GetOrderProductsByOrderIdMunchBakery/52026/1

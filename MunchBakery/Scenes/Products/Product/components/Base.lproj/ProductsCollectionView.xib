@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductsCollectionView" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="zgc-ui-6iJ" id="oYW-sC-0aI"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="K0s-jy-BBJ"/>
+                <outlet property="missingItemsLbl" destination="9cB-q3-i0B" id="VzS-ll-fWH"/>
+                <outlet property="titleLbl" destination="LMH-fR-4gS" id="Gjb-39-Eto"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zgc-ui-6iJ">
+                    <rect key="frame" x="0.0" y="84.5" width="414" height="777.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PCs-Qw-6jd">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Wil-9a-B6o"/>
+                        <outlet property="delegate" destination="-1" id="iQJ-CK-lLs"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended for you" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMH-fR-4gS">
+                    <rect key="frame" x="20" y="54" width="169.5" height="20.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cB-q3-i0B">
+                    <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zgc-ui-6iJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="9jg-OE-z48"/>
+                <constraint firstItem="LMH-fR-4gS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="KHg-cz-wP6"/>
+                <constraint firstItem="9cB-q3-i0B" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PBc-8d-qrs"/>
+                <constraint firstItem="LMH-fR-4gS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="SYF-nZ-sRP"/>
+                <constraint firstItem="zgc-ui-6iJ" firstAttribute="top" secondItem="LMH-fR-4gS" secondAttribute="bottom" constant="10" id="Z8m-pY-KAL"/>
+                <constraint firstItem="zgc-ui-6iJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="c15-K9-OHp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zgc-ui-6iJ" secondAttribute="bottom" id="f0m-Q4-q1h"/>
+                <constraint firstItem="9cB-q3-i0B" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="o6G-WG-aV8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>

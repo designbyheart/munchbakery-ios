@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="156" id="KGk-i7-Jjw" customClass="LastOrderBasicTableViewCell" customModule="MunchBakery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXe-2G-jsx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cFz-LQ-4Pw"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oc-hY-NVu">
+                        <rect key="frame" x="0.0" y="37" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="bcS-1T-LGi"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAJ-eA-Rpo">
+                        <rect key="frame" x="0.0" y="1" width="320" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="O91-kr-mR2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="11"/>
+                        <state key="normal" title="View previous orders">
+                            <color key="titleColor" red="0.94901960784313721" green="0.40784313725490196" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your latest order (#22193)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH6-3Y-vEZ">
+                        <rect key="frame" x="16" y="54" width="288" height="25"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-3" translatesAutoresizingMaskIntoConstraints="NO" id="FN8-xp-jFd">
+                        <rect key="frame" x="32" y="99" width="256" height="32"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVV-VW-SBm">
+                                <rect key="frame" x="0.0" y="0.0" width="256" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEZ-o4-FAn" customClass="OrderSwitchButton" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="32"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
+                                        <state key="normal" title="Order Status">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="orderButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ljx-hD-mKc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpc-lc-tS4" customClass="OrderSwitchButton" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="129.5" y="0.0" width="126.5" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
+                                        <state key="normal" title="Order Summary">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="orderButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fiE-aX-vdS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fEZ-o4-FAn" firstAttribute="height" secondItem="CVV-VW-SBm" secondAttribute="height" id="G30-jn-f3k"/>
+                                    <constraint firstAttribute="trailing" secondItem="kpc-lc-tS4" secondAttribute="trailing" id="KF5-wc-QIY"/>
+                                    <constraint firstItem="kpc-lc-tS4" firstAttribute="width" secondItem="fEZ-o4-FAn" secondAttribute="width" id="TDm-a6-RYS"/>
+                                    <constraint firstItem="kpc-lc-tS4" firstAttribute="height" secondItem="fEZ-o4-FAn" secondAttribute="height" id="i03-9u-Q1g"/>
+                                    <constraint firstItem="fEZ-o4-FAn" firstAttribute="leading" secondItem="CVV-VW-SBm" secondAttribute="leading" id="ib6-31-WKH"/>
+                                    <constraint firstItem="fEZ-o4-FAn" firstAttribute="centerY" secondItem="CVV-VW-SBm" secondAttribute="centerY" id="moR-DY-m1h"/>
+                                    <constraint firstItem="fEZ-o4-FAn" firstAttribute="width" secondItem="CVV-VW-SBm" secondAttribute="width" multiplier="0.495" id="rOW-9f-mZZ"/>
+                                    <constraint firstItem="kpc-lc-tS4" firstAttribute="centerY" secondItem="fEZ-o4-FAn" secondAttribute="centerY" id="sdO-XI-DYJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="2dV-Ri-vPO"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wAJ-eA-Rpo" firstAttribute="top" secondItem="NXe-2G-jsx" secondAttribute="bottom" id="8Ja-29-mKL"/>
+                    <constraint firstItem="FN8-xp-jFd" firstAttribute="top" secondItem="jH6-3Y-vEZ" secondAttribute="bottom" constant="20" id="9F4-Rd-otl"/>
+                    <constraint firstItem="FN8-xp-jFd" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="EPB-Zm-Lfh"/>
+                    <constraint firstItem="FN8-xp-jFd" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.8" id="Hxt-pb-LY8"/>
+                    <constraint firstItem="1oc-hY-NVu" firstAttribute="top" secondItem="wAJ-eA-Rpo" secondAttribute="bottom" id="OF3-kr-HGn"/>
+                    <constraint firstItem="NXe-2G-jsx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XI6-5H-Jjq"/>
+                    <constraint firstItem="FN8-xp-jFd" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aHK-6J-fTv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FN8-xp-jFd" secondAttribute="bottom" constant="14" id="cK1-rT-shr"/>
+                    <constraint firstItem="jH6-3Y-vEZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eiO-ff-26Q"/>
+                    <constraint firstItem="jH6-3Y-vEZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.9" id="hsK-vO-MBI"/>
+                    <constraint firstItem="jH6-3Y-vEZ" firstAttribute="top" secondItem="1oc-hY-NVu" secondAttribute="bottom" constant="16" id="lPo-M7-hHt"/>
+                    <constraint firstItem="NXe-2G-jsx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="njB-1e-C6l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="1oc-hY-NVu" firstAttribute="centerX" secondItem="njF-e1-oar" secondAttribute="centerX" id="1jB-DK-6EA"/>
+                <constraint firstItem="wAJ-eA-Rpo" firstAttribute="centerX" secondItem="njF-e1-oar" secondAttribute="centerX" id="4U2-N1-bvs"/>
+                <constraint firstItem="wAJ-eA-Rpo" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" id="QHc-8U-AVL"/>
+                <constraint firstItem="NXe-2G-jsx" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" id="ctR-bt-8UY"/>
+                <constraint firstItem="1oc-hY-NVu" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" id="f8u-6j-Rmx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonContainer" destination="CVV-VW-SBm" id="8sX-KF-9l6"/>
+                <outlet property="orderNumberLabel" destination="jH6-3Y-vEZ" id="yar-wc-6UR"/>
+                <outlet property="orderStatusButtonOutlet" destination="fEZ-o4-FAn" id="E4j-wX-6iC"/>
+                <outlet property="orderSummaryButtonOutlet" destination="kpc-lc-tS4" id="9T0-0m-dJI"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="129.24107142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

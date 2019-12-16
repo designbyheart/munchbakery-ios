@@ -1,0 +1,7 @@
+except: 
+  - trailing-whitespace
+  - lower-camel-case
+  
+exclude: 
+  - Pods
+  - '**Tests.swift'

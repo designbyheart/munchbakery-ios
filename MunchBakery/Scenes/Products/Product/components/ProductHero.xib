@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductHero" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="K37-9m-MiM"/>
+                <outlet property="priceLbl" destination="n4N-nr-6q8" id="j8K-4I-PuB"/>
+                <outlet property="productImage" destination="FgD-eY-794" id="LtL-KS-aNu"/>
+                <outlet property="titleLbl" destination="EVV-bI-RuK" id="EIb-NG-rrc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FgD-eY-794">
+                    <rect key="frame" x="-62" y="64" width="538" height="537.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="FgD-eY-794" secondAttribute="height" multiplier="1:1" id="5pw-3X-aJa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVV-bI-RuK">
+                    <rect key="frame" x="41.5" y="621.5" width="331" height="24.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.50 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n4N-nr-6q8">
+                    <rect key="frame" x="41.5" y="656" width="331" height="23.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
+                    <color key="textColor" red="0.96078431369999995" green="0.21176470589999999" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHj-M0-CwT">
+                    <rect key="frame" x="0.0" y="875" width="414" height="1"/>
+                    <color key="backgroundColor" name="Border"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qET-YU-nu2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EVV-bI-RuK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3IH-oC-MaH"/>
+                <constraint firstItem="FgD-eY-794" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="8HO-Dg-JQk"/>
+                <constraint firstItem="n4N-nr-6q8" firstAttribute="top" secondItem="EVV-bI-RuK" secondAttribute="bottom" constant="10" id="FSd-AO-H2K"/>
+                <constraint firstItem="n4N-nr-6q8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IAC-Mn-DvK"/>
+                <constraint firstItem="cHj-M0-CwT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Jxl-tR-hSv"/>
+                <constraint firstItem="FgD-eY-794" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.6" priority="900" id="Lcj-Wo-Wia"/>
+                <constraint firstItem="n4N-nr-6q8" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="VcF-sY-ko7"/>
+                <constraint firstItem="FgD-eY-794" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="c1N-rv-VP4"/>
+                <constraint firstAttribute="bottom" secondItem="cHj-M0-CwT" secondAttribute="bottom" constant="20" symbolic="YES" id="c83-wu-1BX"/>
+                <constraint firstItem="cHj-M0-CwT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dHX-YF-mIM"/>
+                <constraint firstItem="EVV-bI-RuK" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="dpu-Pg-u2v"/>
+                <constraint firstItem="EVV-bI-RuK" firstAttribute="top" secondItem="FgD-eY-794" secondAttribute="bottom" constant="20" id="nU9-RI-E4G"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Border">
+            <color red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

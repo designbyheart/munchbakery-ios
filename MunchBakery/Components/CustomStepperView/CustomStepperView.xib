@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomStepperView" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="bE3-79-gPt"/>
+                <outlet property="quantityLabel" destination="ZH4-9w-hch" id="mOw-wh-NKp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZH4-9w-hch">
+                    <rect key="frame" x="195" y="30" width="24" height="19.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="5IB-RD-rXA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-Kf-e4I">
+                    <rect key="frame" x="172" y="28.5" width="15" height="22"/>
+                    <state key="normal" image="delete_cross"/>
+                    <connections>
+                        <action selector="minusButtonTapped:" destination="-1" eventType="touchUpInside" id="Igh-2h-amg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gL-qE-zm7">
+                    <rect key="frame" x="227" y="28.5" width="15" height="22"/>
+                    <state key="normal" image="plusIcon"/>
+                    <connections>
+                        <action selector="plusButtonTapped:" destination="-1" eventType="touchUpInside" id="n6N-8z-nDR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZH4-9w-hch" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1Lv-EM-hsC"/>
+                <constraint firstItem="1gL-qE-zm7" firstAttribute="leading" secondItem="ZH4-9w-hch" secondAttribute="trailing" constant="8" id="6Id-Hq-Oh4"/>
+                <constraint firstItem="ZH4-9w-hch" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9TN-mX-dBk"/>
+                <constraint firstItem="1gL-qE-zm7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="L5h-oi-szl"/>
+                <constraint firstItem="ewC-Kf-e4I" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PyQ-O8-IDJ"/>
+                <constraint firstItem="ZH4-9w-hch" firstAttribute="leading" secondItem="ewC-Kf-e4I" secondAttribute="trailing" constant="8" id="pyV-Wm-uo1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="109.48660714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_cross" width="15" height="15"/>
+        <image name="plusIcon" width="15" height="15"/>
+    </resources>
+</document>

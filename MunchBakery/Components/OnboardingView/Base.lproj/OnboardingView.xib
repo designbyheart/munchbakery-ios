@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuseoSansDisplay-Black.ttf">
+            <string>MuseoSansDisplay-Black</string>
+        </array>
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingView" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="chooseCityBtn" destination="1Cc-iV-hhI" id="jEd-gC-2ce"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="6kH-zf-QYB"/>
+                <outlet property="locateMeBtn" destination="cto-lj-E8e" id="k8I-87-u3U"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cc-iV-hhI" customClass="BorderButton" customModule="MunchBakery" customModuleProvider="target">
+                    <rect key="frame" x="62" y="788" width="290" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Pm1-nx-iFx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                    <state key="normal" title="ChooseCity"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.93999999999999995" green="0.93999999999999995" blue="0.93999999999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" red="0.93999999999999995" green="0.93999999999999995" blue="0.93999999999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9T-Br-yBg">
+                    <rect key="frame" x="198.5" y="756" width="17" height="22"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cto-lj-E8e" customClass="BorderButton" customModule="MunchBakery" customModuleProvider="target">
+                    <rect key="frame" x="62" y="702" width="290" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="C7z-pj-VhC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                    <state key="normal" title="Locate me"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.93999999999999995" green="0.93999999999999995" blue="0.93999999999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" red="0.93999999999999995" green="0.93999999999999995" blue="0.93999999999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order now!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VE-Or-tuW">
+                    <rect key="frame" x="62" y="564" width="290" height="42.5"/>
+                    <fontDescription key="fontDescription" name="MuseoSansDisplay-Black" family="Museo Sans Display" pointSize="35"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feeling hungry? Want a quick birthday cake? Engagement surprise? Just want to try something new?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q32-tD-LpT">
+                    <rect key="frame" x="62" y="621.5" width="290" height="65.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2VE-Or-tuW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3KU-lm-XHy"/>
+                <constraint firstItem="c9T-Br-yBg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3d4-5o-VNQ"/>
+                <constraint firstItem="1Cc-iV-hhI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AYr-8N-Vu0"/>
+                <constraint firstItem="c9T-Br-yBg" firstAttribute="top" secondItem="cto-lj-E8e" secondAttribute="bottom" constant="10" id="ODb-5x-i6y"/>
+                <constraint firstItem="q32-tD-LpT" firstAttribute="top" secondItem="2VE-Or-tuW" secondAttribute="bottom" constant="15" id="P6K-kV-GDa"/>
+                <constraint firstItem="q32-tD-LpT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RLn-fI-wX4"/>
+                <constraint firstItem="2VE-Or-tuW" firstAttribute="width" secondItem="1Cc-iV-hhI" secondAttribute="width" id="TcC-hx-vwx"/>
+                <constraint firstItem="cto-lj-E8e" firstAttribute="width" secondItem="1Cc-iV-hhI" secondAttribute="width" id="Z4l-U5-oLt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Cc-iV-hhI" secondAttribute="bottom" constant="30" id="aWU-FU-Qz6"/>
+                <constraint firstItem="1Cc-iV-hhI" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.7" id="tdF-pr-9Jv"/>
+                <constraint firstItem="cto-lj-E8e" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="udB-9J-tbb"/>
+                <constraint firstItem="q32-tD-LpT" firstAttribute="width" secondItem="1Cc-iV-hhI" secondAttribute="width" id="vub-kp-uKR"/>
+                <constraint firstItem="cto-lj-E8e" firstAttribute="top" secondItem="q32-tD-LpT" secondAttribute="bottom" constant="15" id="wZt-ZV-mBZ"/>
+                <constraint firstItem="1Cc-iV-hhI" firstAttribute="top" secondItem="c9T-Br-yBg" secondAttribute="bottom" constant="10" id="z3x-Ax-5GF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="50.724637681159422" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabBarMenuView" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="bi5-6e-8lK"/>
+                <outlet property="moreBtn" destination="JGo-0e-62T" id="7Sc-3C-Lft"/>
+                <outlet property="munchBunchBtn" destination="cK0-yt-t4w" id="5Ji-BP-CqU"/>
+                <outlet property="ordersBtn" destination="jTk-B1-huJ" id="2YX-yD-H0w"/>
+                <outlet property="productsBtn" destination="czO-vo-aMl" id="gJj-gl-Exa"/>
+                <outlet property="topBorder" destination="hx8-Ff-anA" id="TBG-lY-YRP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Htb-00-yur">
+                    <rect key="frame" x="0.0" y="638.5" width="375" height="23.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="czO-vo-aMl" customClass="TabMenuButton" customModule="MunchBakery" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="94" height="23.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                            <state key="normal" title="Products" image="productsTabIcon"/>
+                            <state key="selected" image="productsTabIconActive"/>
+                            <state key="highlighted" image="productsTabIconActive"/>
+                            <connections>
+                                <action selector="navigate:" destination="-1" eventType="touchUpInside" id="xAD-5V-GwW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jTk-B1-huJ" customClass="TabMenuButton" customModule="MunchBakery" customModuleProvider="target">
+                            <rect key="frame" x="94" y="0.0" width="93.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                            <state key="normal" title="Orders" image="ordersTabIcon"/>
+                            <state key="selected" image="orderTabIconActive"/>
+                            <state key="highlighted" image="orderTabIconActive"/>
+                            <connections>
+                                <action selector="navigate:" destination="-1" eventType="touchUpInside" id="V72-nf-13A"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK0-yt-t4w" customClass="TabMenuButton" customModule="MunchBakery" customModuleProvider="target">
+                            <rect key="frame" x="187.5" y="0.0" width="94" height="23.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                            <state key="normal" title="Munch Bunch" image="giftTabIcon"/>
+                            <state key="selected" image="giftTabIconActive"/>
+                            <state key="highlighted" image="giftTabIconActive"/>
+                            <connections>
+                                <action selector="navigate:" destination="-1" eventType="touchUpInside" id="z68-IB-ipH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JGo-0e-62T" customClass="TabMenuButton" customModule="MunchBakery" customModuleProvider="target">
+                            <rect key="frame" x="281.5" y="0.0" width="93.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                            <state key="normal" title="More" image="moreTabIcon"/>
+                            <state key="selected" image="moreTabIconActive"/>
+                            <state key="highlighted" image="moreTabIconActive"/>
+                            <connections>
+                                <action selector="navigate:" destination="-1" eventType="touchUpInside" id="5iO-tW-V1Y"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hx8-Ff-anA" userLabel="topBorder">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="DSu-Uz-HUf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.15261934432515337" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hx8-Ff-anA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7sc-fA-Kf8"/>
+                <constraint firstItem="Htb-00-yur" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="80c-oX-59I"/>
+                <constraint firstItem="Htb-00-yur" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="8v2-jX-gxI"/>
+                <constraint firstItem="hx8-Ff-anA" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="JBY-Ur-qGW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Htb-00-yur" secondAttribute="bottom" constant="5" id="Wre-lC-SIw"/>
+                <constraint firstItem="hx8-Ff-anA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tma-xz-PkR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="86" y="58"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="giftTabIcon" width="23" height="22.5"/>
+        <image name="giftTabIconActive" width="23" height="22.5"/>
+        <image name="moreTabIcon" width="26" height="8"/>
+        <image name="moreTabIconActive" width="26" height="8"/>
+        <image name="orderTabIconActive" width="17.5" height="21.5"/>
+        <image name="ordersTabIcon" width="17.5" height="21.5"/>
+        <image name="productsTabIcon" width="18" height="23.5"/>
+        <image name="productsTabIconActive" width="18" height="23.5"/>
+    </resources>
+</document>

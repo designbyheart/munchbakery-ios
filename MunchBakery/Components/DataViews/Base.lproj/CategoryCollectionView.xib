@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryCollectionView" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="bbk-Lb-WUp" id="KpE-LO-15w"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="39C-ya-6GK"/>
+                <outlet property="missingItemsLbl" destination="i4p-DE-x4f" id="tjG-E0-Rb5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bbk-Lb-WUp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ibe-RJ-wK0">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6Vp-xX-4Dw"/>
+                        <outlet property="delegate" destination="-1" id="Zgc-TN-SeS"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4p-DE-x4f">
+                    <rect key="frame" x="56.5" y="267" width="262.5" height="0.0"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bbk-Lb-WUp" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="A1B-Ti-wyy"/>
+                <constraint firstItem="i4p-DE-x4f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.8" id="KdN-cB-t0x"/>
+                <constraint firstItem="bbk-Lb-WUp" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Wy6-Zl-Vpd"/>
+                <constraint firstItem="bbk-Lb-WUp" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="kJU-NG-FyS"/>
+                <constraint firstItem="i4p-DE-x4f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lbV-El-fPO"/>
+                <constraint firstItem="i4p-DE-x4f" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.7" id="o5e-TP-iz0"/>
+                <constraint firstItem="bbk-Lb-WUp" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ogO-hd-TXD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="58" y="232"/>
+        </view>
+    </objects>
+</document>

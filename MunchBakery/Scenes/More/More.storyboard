@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xDk-bM-PnH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--More View Controller-->
+        <scene sceneID="fLr-Gd-jzS">
+            <objects>
+                <viewController id="6aO-EO-Rgb" customClass="MoreViewController" customModule="MunchBakery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sXq-qw-e4v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="biB-Im-aAf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Djj-OX-Orr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPt-MJ-jWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109.5999999999999" y="-988.15592203898063"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="skg-l2-BVw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xDk-bM-PnH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="g13-4z-lXf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zge-iF-BYq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6aO-EO-Rgb" kind="relationship" relationship="rootViewController" id="Ua1-EA-3LP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbd-xk-L6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170.40000000000001" y="-988.15592203898063"/>
+        </scene>
+    </scenes>
+</document>

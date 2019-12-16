@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0p-XX-25X">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category View Controller-->
+        <scene sceneID="qD8-Ut-58l">
+            <objects>
+                <viewController id="WX3-sn-a3K" customClass="CategoryViewController" customModule="MunchBakery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WVN-36-dK3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CY-fy-H2F" customClass="CategoryCollectionView" customModule="MunchBakery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="70" width="375" height="517"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4CY-fy-H2F" firstAttribute="centerX" secondItem="WVN-36-dK3" secondAttribute="centerX" id="2Zk-QP-AqR"/>
+                            <constraint firstItem="4CY-fy-H2F" firstAttribute="top" secondItem="k92-7m-286" secondAttribute="top" constant="70" id="JcB-4b-TPe"/>
+                            <constraint firstItem="4CY-fy-H2F" firstAttribute="width" secondItem="k92-7m-286" secondAttribute="width" id="ez6-pd-S97"/>
+                            <constraint firstItem="4CY-fy-H2F" firstAttribute="bottom" secondItem="k92-7m-286" secondAttribute="bottom" constant="-80" id="h0d-xu-TdC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k92-7m-286"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TRO-YI-Iep"/>
+                    <connections>
+                        <outlet property="categoriesCollectionView" destination="4CY-fy-H2F" id="aTU-5x-QD9"/>
+                        <outlet property="view" destination="WVN-36-dK3" id="iEd-7e-DrR"/>
+                        <segue destination="2nf-uE-4mY" kind="show" id="nsQ-lu-Ljc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kso-Cc-PMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="290"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="Txa-fM-te0">
+            <objects>
+                <viewController storyboardIdentifier="ProductViewController" id="2nf-uE-4mY" customClass="ProductViewController" customModule="MunchBakery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="15w-cW-4t6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hp3-6g-3Fa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="XNL-2h-qxB"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="A0c-4N-qGd"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqo-Hj-zlz" customClass="ProductsCollectionView" customModule="MunchBakery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="90" width="375" height="507"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="bca-vL-COT"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hqo-Hj-zlz" firstAttribute="width" secondItem="15w-cW-4t6" secondAttribute="width" id="6zE-jS-WrC"/>
+                            <constraint firstItem="hp3-6g-3Fa" firstAttribute="centerX" secondItem="15w-cW-4t6" secondAttribute="centerX" id="JBf-4a-EKQ"/>
+                            <constraint firstItem="Hqo-Hj-zlz" firstAttribute="centerX" secondItem="B8T-pE-k9s" secondAttribute="centerX" id="Q1i-8c-Ayf"/>
+                            <constraint firstItem="Hqo-Hj-zlz" firstAttribute="top" secondItem="hp3-6g-3Fa" secondAttribute="bottom" constant="90" id="UzU-WN-8Ko"/>
+                            <constraint firstItem="B8T-pE-k9s" firstAttribute="bottom" secondItem="Hqo-Hj-zlz" secondAttribute="bottom" constant="70" id="rwr-t3-jdb"/>
+                            <constraint firstItem="hp3-6g-3Fa" firstAttribute="width" secondItem="15w-cW-4t6" secondAttribute="width" id="siq-u7-YO1"/>
+                            <constraint firstItem="hp3-6g-3Fa" firstAttribute="top" secondItem="B8T-pE-k9s" secondAttribute="top" id="xW0-n8-ye3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B8T-pE-k9s"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tSQ-6q-G5J"/>
+                    <connections>
+                        <outlet property="headerView" destination="hp3-6g-3Fa" id="K2x-67-I3s"/>
+                        <outlet property="productCollectionView" destination="Hqo-Hj-zlz" id="RLM-n8-5cU"/>
+                        <segue destination="WuQ-Po-np2" kind="show" identifier="ProductDetailsViewController" id="F6V-df-cuZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZL8-ON-4hU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.60000000000002" y="289.20539730134936"/>
+        </scene>
+        <!--Product Details View Controller-->
+        <scene sceneID="hKs-EP-mhM">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailsViewController" id="WuQ-Po-np2" customClass="ProductDetailsViewController" customModule="MunchBakery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sG9-Sm-HHh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FyX-jq-CAW" customClass="AmountPicker" customModule="MunchBakery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="439" width="375" height="228"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ux8-wk-yzF" customClass="ProductHero" customModule="MunchBakery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="90" width="375" height="349"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ux8-wk-yzF" secondAttribute="height" multiplier="1:0.93" id="cHD-oJ-SqH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ux8-wk-yzF" firstAttribute="centerX" secondItem="sG9-Sm-HHh" secondAttribute="centerX" id="H0u-qG-cS6"/>
+                            <constraint firstItem="FyX-jq-CAW" firstAttribute="centerX" secondItem="sG9-Sm-HHh" secondAttribute="centerX" id="KOR-Fj-5oQ"/>
+                            <constraint firstItem="Qqu-FM-ZwW" firstAttribute="bottom" secondItem="FyX-jq-CAW" secondAttribute="bottom" id="QTJ-vK-LGV"/>
+                            <constraint firstItem="ux8-wk-yzF" firstAttribute="width" secondItem="sG9-Sm-HHh" secondAttribute="width" id="QfG-HJ-6Mm"/>
+                            <constraint firstItem="FyX-jq-CAW" firstAttribute="width" secondItem="sG9-Sm-HHh" secondAttribute="width" id="XRR-1W-zTa"/>
+                            <constraint firstItem="FyX-jq-CAW" firstAttribute="top" secondItem="ux8-wk-yzF" secondAttribute="bottom" id="q4g-cK-d7G"/>
+                            <constraint firstItem="ux8-wk-yzF" firstAttribute="top" secondItem="Qqu-FM-ZwW" secondAttribute="top" constant="90" id="zep-Mb-DFJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qqu-FM-ZwW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O9o-qg-xxn"/>
+                    <connections>
+                        <outlet property="amountPicker" destination="FyX-jq-CAW" id="OMY-Vt-QwF"/>
+                        <outlet property="productView" destination="ux8-wk-yzF" id="s34-Uj-abN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4VH-gJ-yea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="290"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="k0O-f7-VxU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="e0p-XX-25X" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="O5R-Wn-bnI"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8gR-1r-EFX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WX3-sn-a3K" kind="relationship" relationship="rootViewController" id="4Eo-yq-wcY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5q-gk-f6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767" y="291"/>
+        </scene>
+    </scenes>
+</document>

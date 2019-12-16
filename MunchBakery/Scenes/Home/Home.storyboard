@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e1u-Ys-o08">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="6p0-gC-q8z">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="eJ3-Je-9Mv" customClass="HomeViewController" customModule="MunchBakery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ic7-ET-5Ts">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIM-uH-6UL" customClass="OnboardingView" customModule="MunchBakery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="114" width="414" height="350"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="TdV-Uz-alf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTl-CX-ASo" customClass="ProductsCollectionView" customModule="MunchBakery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="464" width="414" height="328"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUz-EK-cl1" customClass="AmountPicker" customModule="MunchBakery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OIM-uH-6UL" firstAttribute="width" secondItem="ic7-ET-5Ts" secondAttribute="width" id="1rt-FO-JeT"/>
+                            <constraint firstItem="bUz-EK-cl1" firstAttribute="centerX" secondItem="ic7-ET-5Ts" secondAttribute="centerX" id="2yk-2l-pMI"/>
+                            <constraint firstItem="OIM-uH-6UL" firstAttribute="centerX" secondItem="ic7-ET-5Ts" secondAttribute="centerX" id="32l-cG-WID"/>
+                            <constraint firstItem="OIM-uH-6UL" firstAttribute="top" secondItem="GWB-k1-Gsh" secondAttribute="top" constant="70" id="C7o-xb-Yax"/>
+                            <constraint firstItem="bUz-EK-cl1" firstAttribute="height" secondItem="ic7-ET-5Ts" secondAttribute="height" id="Cnl-Lf-x53"/>
+                            <constraint firstItem="gTl-CX-ASo" firstAttribute="centerX" secondItem="ic7-ET-5Ts" secondAttribute="centerX" id="TjW-57-jUW"/>
+                            <constraint firstItem="gTl-CX-ASo" firstAttribute="top" secondItem="OIM-uH-6UL" secondAttribute="bottom" id="WYd-yI-xC6"/>
+                            <constraint firstItem="gTl-CX-ASo" firstAttribute="width" secondItem="ic7-ET-5Ts" secondAttribute="width" id="kKN-fQ-2Mp"/>
+                            <constraint firstItem="GWB-k1-Gsh" firstAttribute="bottom" secondItem="gTl-CX-ASo" secondAttribute="bottom" constant="70" id="oVl-hr-Cvu"/>
+                            <constraint firstItem="bUz-EK-cl1" firstAttribute="width" secondItem="ic7-ET-5Ts" secondAttribute="width" id="t5O-au-oib"/>
+                            <constraint firstItem="bUz-EK-cl1" firstAttribute="centerY" secondItem="ic7-ET-5Ts" secondAttribute="centerY" id="uOA-Au-Ge3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GWB-k1-Gsh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UAv-4F-4kw"/>
+                    <connections>
+                        <outlet property="amountPicker" destination="bUz-EK-cl1" id="QeT-3G-u3m"/>
+                        <outlet property="onBoardingView" destination="OIM-uH-6UL" id="loO-og-XT5"/>
+                        <outlet property="productsCollectionView" destination="gTl-CX-ASo" id="bdo-kf-AM3"/>
+                        <outlet property="view" destination="ic7-ET-5Ts" id="Mjn-dj-qXm"/>
+                        <segue destination="diC-t1-mic" kind="show" identifier="ProductDetailsViewController" id="akL-fd-Bbc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vFr-VR-rw3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.73913043478262" y="48.883928571428569"/>
+        </scene>
+        <!--ProductDetailsViewController-->
+        <scene sceneID="ePE-T6-bFv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Products" referencedIdentifier="ProductDetailsViewController" id="diC-t1-mic" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IbT-nN-Y5Y"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Flt-QW-hXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576.8115942028987" y="-101.11607142857143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rYE-8A-GWu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="e1u-Ys-o08" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="baj-ob-PeA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eJ3-Je-9Mv" kind="relationship" relationship="rootViewController" id="mnJ-w9-rKv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yc-wV-g9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88.405797101449281" y="48.883928571428569"/>
+        </scene>
+    </scenes>
+</document>

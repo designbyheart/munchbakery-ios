@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "FREE"; ObjectID = "97l-fF-E8o"; */
+"97l-fF-E8o.text" = "FREE";
+
+/* Class = "UILabel"; text = "Delivery Fees:"; ObjectID = "DX3-ZM-Oso"; */
+"DX3-ZM-Oso.text" = "Delivery Fees:";
+
+/* Class = "UILabel"; text = "63 SAR"; ObjectID = "EJR-Cp-r7M"; */
+"EJR-Cp-r7M.text" = "63 SAR";
+
+/* Class = "UILabel"; text = "Total:"; ObjectID = "HQZ-Bk-ARN"; */
+"HQZ-Bk-ARN.text" = "Total:";
+
+/* Class = "UILabel"; text = "57.5 SAR"; ObjectID = "K5W-Ho-sL1"; */
+"K5W-Ho-sL1.text" = "57.5 SAR";
+
+/* Class = "UILabel"; text = "Payement Details"; ObjectID = "L10-UT-33d"; */
+"L10-UT-33d.text" = "Payement Details";
+
+/* Class = "UILabel"; text = "10% OFF"; ObjectID = "VLm-Sr-dQx"; */
+"VLm-Sr-dQx.text" = "10% OFF";
+
+/* Class = "UILabel"; text = "Discount:"; ObjectID = "h7U-GZ-pCy"; */
+"h7U-GZ-pCy.text" = "Discount:";
+
+/* Class = "UIButton"; normalTitle = "Place order"; ObjectID = "iAh-Sa-uUF"; */
+"iAh-Sa-uUF.normalTitle" = "Place order";
+
+/* Class = "UILabel"; text = "Order Total:"; ObjectID = "kaE-U5-R6A"; */
+"kaE-U5-R6A.text" = "Order Total:";

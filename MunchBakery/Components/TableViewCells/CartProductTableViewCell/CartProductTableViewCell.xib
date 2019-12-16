@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="PN2-Ha-hek" customClass="CartProductTableViewCell" customModule="MunchBakery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PN2-Ha-hek" id="j2x-Ez-U8y">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake" translatesAutoresizingMaskIntoConstraints="NO" id="0qA-56-BQ0">
+                        <rect key="frame" x="16" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Pl8-na-5WK"/>
+                            <constraint firstAttribute="height" constant="40" id="ZA9-iP-BDV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.50 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MHf-3x-bEA">
+                        <rect key="frame" x="140" y="21" width="60" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="gh7-2g-Rha"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="10"/>
+                        <color key="textColor" red="0.96078431369999995" green="0.21176470589999999" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5i4-hJ-CLH">
+                        <rect key="frame" x="56" y="-10.5" width="84" height="77"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmw-bx-2JR">
+                                <rect key="frame" x="5" y="40" width="69" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="aSS-Rt-t5m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cookie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVe-h4-DRO">
+                                <rect key="frame" x="5" y="20" width="84" height="20"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vmw-bx-2JR" firstAttribute="leading" secondItem="5i4-hJ-CLH" secondAttribute="leading" constant="5" id="10g-V5-7fh"/>
+                            <constraint firstItem="lVe-h4-DRO" firstAttribute="leading" secondItem="5i4-hJ-CLH" secondAttribute="leading" constant="5" id="5pv-2x-zpp"/>
+                            <constraint firstItem="lVe-h4-DRO" firstAttribute="top" secondItem="5i4-hJ-CLH" secondAttribute="top" constant="20" id="7bM-qf-6QY"/>
+                            <constraint firstAttribute="trailing" secondItem="vmw-bx-2JR" secondAttribute="trailing" constant="10" id="GOw-Y5-JhX"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Thq-69-bXB"/>
+                            <constraint firstItem="lVe-h4-DRO" firstAttribute="width" secondItem="5i4-hJ-CLH" secondAttribute="width" id="doO-jr-y7Z"/>
+                            <constraint firstItem="vmw-bx-2JR" firstAttribute="top" secondItem="lVe-h4-DRO" secondAttribute="bottom" id="sDq-5r-1Hw"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNC-af-5UV" customClass="CustomStepperView" customModule="MunchBakery" customModuleProvider="target">
+                        <rect key="frame" x="210" y="10.5" width="90" height="35"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="PqV-JG-VCi"/>
+                            <constraint firstAttribute="width" constant="90" id="dM8-vJ-leS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5i4-hJ-CLH" firstAttribute="height" secondItem="j2x-Ez-U8y" secondAttribute="height" multiplier="1.375" id="DXJ-cL-x3I"/>
+                    <constraint firstItem="5i4-hJ-CLH" firstAttribute="centerY" secondItem="j2x-Ez-U8y" secondAttribute="centerY" id="Jxd-wT-cbt"/>
+                    <constraint firstAttribute="trailing" secondItem="ZNC-af-5UV" secondAttribute="trailing" constant="20" id="Vku-Lp-rrO"/>
+                    <constraint firstItem="0qA-56-BQ0" firstAttribute="centerY" secondItem="j2x-Ez-U8y" secondAttribute="centerY" id="Z9m-zq-kvs"/>
+                    <constraint firstItem="ZNC-af-5UV" firstAttribute="centerY" secondItem="j2x-Ez-U8y" secondAttribute="centerY" id="Zzz-rw-8YW"/>
+                    <constraint firstItem="0qA-56-BQ0" firstAttribute="leading" secondItem="j2x-Ez-U8y" secondAttribute="leadingMargin" id="dxG-hj-tjb"/>
+                    <constraint firstItem="MHf-3x-bEA" firstAttribute="centerY" secondItem="j2x-Ez-U8y" secondAttribute="centerY" id="gad-Q2-P4q"/>
+                    <constraint firstItem="MHf-3x-bEA" firstAttribute="leading" secondItem="5i4-hJ-CLH" secondAttribute="trailing" id="lGa-HF-chU"/>
+                    <constraint firstItem="ZNC-af-5UV" firstAttribute="leading" secondItem="MHf-3x-bEA" secondAttribute="trailing" constant="10" id="oDL-w7-iT6"/>
+                    <constraint firstItem="5i4-hJ-CLH" firstAttribute="leading" secondItem="0qA-56-BQ0" secondAttribute="trailing" id="tZM-eU-AzF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="BIJ-0l-pUx"/>
+            <connections>
+                <outlet property="amountPicker" destination="ZNC-af-5UV" id="BZ6-un-YPl"/>
+                <outlet property="priceLbl" destination="MHf-3x-bEA" id="RVN-6w-dcp"/>
+                <outlet property="productImg" destination="0qA-56-BQ0" id="SiG-1P-b2w"/>
+                <outlet property="productNameLbl" destination="lVe-h4-DRO" id="gWZ-sd-Rqw"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="148.66071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cake" width="190" height="190"/>
+    </resources>
+</document>

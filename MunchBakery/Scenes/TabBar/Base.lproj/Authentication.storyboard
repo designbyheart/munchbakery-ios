@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b7b-9f-O9e">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuseoSansDisplay-Black.ttf">
+            <string>MuseoSansDisplay-Black</string>
+        </array>
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="X0B-bj-VXM">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="xu0-mF-scJ" customClass="LoginViewController" customModule="MunchBakery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="48a-Tz-vQN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8Mg-EB-Dl7">
+                                <rect key="frame" x="41.5" y="349.5" width="331" height="106"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksB-8W-Bgd" customClass="InputField" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="yKa-y0-Xxa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="xu0-mF-scJ" id="TSz-GZ-sUo"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uB0-7P-z5T" customClass="InputField" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="62" width="331" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Q0D-fa-nWX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="xu0-mF-scJ" id="crG-pR-xFQ"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDz-do-g2Y">
+                                <rect key="frame" x="41.5" y="257" width="331" height="42.5"/>
+                                <fontDescription key="fontDescription" name="MuseoSansDisplay-Black" family="Museo Sans Display" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dbv-4u-noI">
+                                <rect key="frame" x="71" y="180" width="272" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ND-Hp-fSU" customClass="ShadowButton" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="42"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="XGu-B6-ldn"/>
+                                            <constraint firstAttribute="width" constant="126" id="mPT-7M-jmq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuY-YG-b0R" customClass="ShadowButton" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="146" y="0.0" width="126" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="126" id="96d-Wu-Mo9"/>
+                                            <constraint firstAttribute="height" constant="42" id="bWx-Uw-3tK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerButtonTapped:" destination="xu0-mF-scJ" eventType="touchUpInside" id="MlE-vL-e6M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ctg-OG-6sw">
+                                <rect key="frame" x="0.0" y="455.5" width="414" height="406.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXP-xp-8YI" customClass="ShadowButton" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="135" width="290" height="55"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="6P2-r4-YD0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="xu0-mF-scJ" eventType="touchUpInside" id="pct-ok-lEk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="DXP-xp-8YI" firstAttribute="width" secondItem="Ctg-OG-6sw" secondAttribute="width" multiplier="0.7" id="001-kH-j35"/>
+                                    <constraint firstItem="DXP-xp-8YI" firstAttribute="centerY" secondItem="Ctg-OG-6sw" secondAttribute="centerY" multiplier="0.8" id="0iM-wf-VZ8"/>
+                                    <constraint firstItem="DXP-xp-8YI" firstAttribute="centerX" secondItem="Ctg-OG-6sw" secondAttribute="centerX" id="j5U-XL-bl2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyS-Zu-La5">
+                                <rect key="frame" x="62" y="329.5" width="290" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dbv-4u-noI" firstAttribute="centerX" secondItem="48a-Tz-vQN" secondAttribute="centerX" id="2fM-8z-w4a"/>
+                            <constraint firstItem="dbv-4u-noI" firstAttribute="top" secondItem="48a-Tz-vQN" secondAttribute="top" constant="180" id="AXi-Pw-SeB"/>
+                            <constraint firstItem="xyS-Zu-La5" firstAttribute="width" secondItem="48a-Tz-vQN" secondAttribute="width" multiplier="0.7" id="JkF-ZC-XOn"/>
+                            <constraint firstItem="xyS-Zu-La5" firstAttribute="centerX" secondItem="48a-Tz-vQN" secondAttribute="centerX" id="LiB-0d-oCf"/>
+                            <constraint firstItem="gQq-x5-gmT" firstAttribute="bottom" secondItem="Ctg-OG-6sw" secondAttribute="bottom" id="RRs-lJ-Pik"/>
+                            <constraint firstItem="xyS-Zu-La5" firstAttribute="top" secondItem="fDz-do-g2Y" secondAttribute="bottom" constant="30" id="TKD-4z-ZcQ"/>
+                            <constraint firstItem="8Mg-EB-Dl7" firstAttribute="width" secondItem="gQq-x5-gmT" secondAttribute="width" multiplier="0.8" id="UF9-sp-PKF"/>
+                            <constraint firstItem="8Mg-EB-Dl7" firstAttribute="trailing" secondItem="fDz-do-g2Y" secondAttribute="trailing" id="YO0-xv-7kL"/>
+                            <constraint firstItem="fDz-do-g2Y" firstAttribute="top" secondItem="dbv-4u-noI" secondAttribute="bottom" constant="35" id="gRy-TF-bXQ"/>
+                            <constraint firstItem="Ctg-OG-6sw" firstAttribute="centerX" secondItem="48a-Tz-vQN" secondAttribute="centerX" id="lBB-Iq-1wf"/>
+                            <constraint firstItem="Ctg-OG-6sw" firstAttribute="top" secondItem="8Mg-EB-Dl7" secondAttribute="bottom" id="nh1-YM-dxC"/>
+                            <constraint firstItem="8Mg-EB-Dl7" firstAttribute="leading" secondItem="fDz-do-g2Y" secondAttribute="leading" id="pcI-5Y-nZY"/>
+                            <constraint firstItem="8Mg-EB-Dl7" firstAttribute="centerX" secondItem="48a-Tz-vQN" secondAttribute="centerX" id="rQf-NX-NnW"/>
+                            <constraint firstItem="Ctg-OG-6sw" firstAttribute="width" secondItem="48a-Tz-vQN" secondAttribute="width" id="uLe-Bw-ZhJ"/>
+                            <constraint firstItem="8Mg-EB-Dl7" firstAttribute="top" secondItem="xyS-Zu-La5" secondAttribute="bottom" constant="20" id="z6f-Si-AOA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gQq-x5-gmT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iXY-TN-EeR"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="emailTF" destination="ksB-8W-Bgd" id="m3w-cr-n6C"/>
+                        <outlet property="errorLbl" destination="xyS-Zu-La5" id="G7M-po-PSa"/>
+                        <outlet property="loginBottomConstraint" destination="0iM-wf-VZ8" id="fgE-vk-cwb"/>
+                        <outlet property="loginBtn" destination="7ND-Hp-fSU" id="zQ7-g3-rMU"/>
+                        <outlet property="passwordTF" destination="uB0-7P-z5T" id="rGF-dY-TOs"/>
+                        <outlet property="registerBtn" destination="KuY-YG-b0R" id="Bqe-EV-uiT"/>
+                        <outlet property="submitBtn" destination="DXP-xp-8YI" id="7hU-yn-Y7S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2u8-d8-Ba4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968" y="-244"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="OgJ-O4-LEw">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="uz2-RD-Jty" customClass="SignUpViewController" customModule="MunchBakery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="qmU-G4-1im">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="q5k-1S-HzJ">
+                                <rect key="frame" x="41.5" y="216" width="331" height="292"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYc-5P-NAA" customClass="InputField" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Iwh-cd-95Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C2P-7n-spf" customClass="InputField" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="62" width="331" height="44"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CJD-6c-oN8" customClass="InputField" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="124" width="331" height="44"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j0e-d6-XuQ" customClass="InputField" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="186" width="331" height="44"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Repeat Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P8L-Ew-soS" customClass="InputField" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="248" width="331" height="44"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SI3-Ay-BIM">
+                                <rect key="frame" x="51.5" y="528" width="321" height="49.5"/>
+                                <string key="text">By creating an account on our website you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.</string>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3MI-Kj-gkL" userLabel="Buttons Stack View">
+                                <rect key="frame" x="71" y="134" width="272" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wE-1D-oOP" customClass="ShadowButton" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="126" id="oE6-Or-sAM"/>
+                                            <constraint firstAttribute="height" constant="42" id="vUA-lV-ASK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="uz2-RD-Jty" eventType="touchUpInside" id="tE5-2i-zeE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKo-wd-k0l" customClass="ShadowButton" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="146" y="0.0" width="126" height="42"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="UUF-bt-fpz"/>
+                                            <constraint firstAttribute="width" constant="126" id="r4z-vr-BxU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerButtonTapped:" destination="uz2-RD-Jty" eventType="touchUpInside" id="VlZ-VD-bPn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="td2-RG-fIL">
+                                <rect key="frame" x="0.0" y="585.5" width="414" height="290.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpR-hy-wdE" customClass="ShadowButton" customModule="MunchBakery" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="48.5" width="290" height="55"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="0Q8-Ol-BPj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="xu0-mF-scJ" eventType="touchUpInside" id="I9D-N6-d9b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="lpR-hy-wdE" firstAttribute="width" secondItem="td2-RG-fIL" secondAttribute="width" multiplier="0.7" id="7G2-Zz-12j"/>
+                                    <constraint firstItem="lpR-hy-wdE" firstAttribute="centerY" secondItem="td2-RG-fIL" secondAttribute="centerY" multiplier="0.8" constant="-40" id="Eps-LJ-13g"/>
+                                    <constraint firstItem="lpR-hy-wdE" firstAttribute="centerX" secondItem="td2-RG-fIL" secondAttribute="centerX" id="mJq-iu-zLM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="td2-RG-fIL" firstAttribute="width" secondItem="qmU-G4-1im" secondAttribute="width" id="0Zi-L8-wcf"/>
+                            <constraint firstItem="3MI-Kj-gkL" firstAttribute="centerX" secondItem="qmU-G4-1im" secondAttribute="centerX" id="Eeg-bE-oH3"/>
+                            <constraint firstAttribute="bottom" secondItem="td2-RG-fIL" secondAttribute="bottom" constant="20" symbolic="YES" id="MGj-1e-LWk"/>
+                            <constraint firstItem="SI3-Ay-BIM" firstAttribute="trailing" secondItem="q5k-1S-HzJ" secondAttribute="trailing" id="MSM-bl-0GF"/>
+                            <constraint firstItem="q5k-1S-HzJ" firstAttribute="centerX" secondItem="qmU-G4-1im" secondAttribute="centerX" id="Rud-j4-GKO"/>
+                            <constraint firstItem="3MI-Kj-gkL" firstAttribute="top" secondItem="luB-4t-Ih4" secondAttribute="top" constant="90" id="U6o-Xo-mgi"/>
+                            <constraint firstItem="SI3-Ay-BIM" firstAttribute="leading" secondItem="q5k-1S-HzJ" secondAttribute="leading" constant="10" id="UmT-K0-wND"/>
+                            <constraint firstItem="SI3-Ay-BIM" firstAttribute="top" secondItem="q5k-1S-HzJ" secondAttribute="bottom" constant="20" id="pm2-md-2QG"/>
+                            <constraint firstItem="q5k-1S-HzJ" firstAttribute="width" secondItem="luB-4t-Ih4" secondAttribute="width" multiplier="0.8" id="tKi-Aq-tHd"/>
+                            <constraint firstItem="td2-RG-fIL" firstAttribute="centerX" secondItem="qmU-G4-1im" secondAttribute="centerX" id="uTg-Gx-6LG"/>
+                            <constraint firstItem="td2-RG-fIL" firstAttribute="top" secondItem="SI3-Ay-BIM" secondAttribute="bottom" constant="8" symbolic="YES" id="ude-yB-OCz"/>
+                            <constraint firstItem="q5k-1S-HzJ" firstAttribute="top" secondItem="3MI-Kj-gkL" secondAttribute="bottom" constant="40" id="w4g-w0-VS3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="luB-4t-Ih4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kvP-Ki-lBz"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="2wE-1D-oOP" id="RyE-Ex-6eK"/>
+                        <outlet property="registerBtn" destination="PKo-wd-k0l" id="cBb-XZ-fY9"/>
+                        <outlet property="registerSubmitBtn" destination="lpR-hy-wdE" id="gWw-Ui-Sbw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vq-uP-Ox6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3616" y="-244"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="LCL-0E-srU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="b7b-9f-O9e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="iZn-20-6il"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2eX-ec-V3I">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xu0-mF-scJ" kind="relationship" relationship="rootViewController" id="k3a-Vm-deh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8Z-9R-HKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1208.6956521739132" y="-244.41964285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="udj-qF-PNO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="bLO-7y-09S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wa0-ca-FBg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uz2-RD-Jty" kind="relationship" relationship="rootViewController" id="Gyf-Xx-7xs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1A1-IA-XOS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2850.7246376811595" y="-244.41964285714283"/>
+        </scene>
+    </scenes>
+</document>

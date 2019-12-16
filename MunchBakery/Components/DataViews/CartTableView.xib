@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartTableView" customModule="MunchBakery" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="DUQ-nI-GhJ"/>
+                <outlet property="emptyLabel" destination="EV0-tr-DbX" id="SwK-wY-V9G"/>
+                <outlet property="tableView" destination="TG3-MD-FEu" id="kjZ-Ho-fcR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TG3-MD-FEu">
+                    <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sec-yK-Xyh"/>
+                        <outlet property="delegate" destination="-1" id="POV-lg-7ly"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart is empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV0-tr-DbX">
+                    <rect key="frame" x="155.5" y="437.5" width="103" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EV0-tr-DbX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2Qc-dr-hgT"/>
+                <constraint firstItem="TG3-MD-FEu" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="blm-NB-lEV"/>
+                <constraint firstItem="TG3-MD-FEu" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="fV4-dp-obT"/>
+                <constraint firstItem="EV0-tr-DbX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lMd-nc-y54"/>
+                <constraint firstItem="TG3-MD-FEu" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="t8b-gd-yrI"/>
+                <constraint firstItem="TG3-MD-FEu" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="voP-ws-pUp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="141" y="117"/>
+        </view>
+    </objects>
+</document>
